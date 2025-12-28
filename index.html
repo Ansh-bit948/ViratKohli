@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virat Kohli - The King of Cricket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">VK<span>18</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#timeline" class="nav-link">Career</a></li>
+                <li><a href="#stats" class="nav-link">Stats</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#social" class="nav-link">Connect</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="https://cdn.pixabay.com/vimeo/429981873/stadium-43244.mp4?width=1280&hash=c2a0e91e2b9e0e6f4b3e3e3e3e3e3e3e3e3e3e3e" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">VIRAT KOHLI</h1>
+                <p class="hero-subtitle">King of Cricket | Run Machine | Icon</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="26000">0</div>
+                        <div class="stat-label">International Runs</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="80">0</div>
+                        <div class="stat-label">International Centuries</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="267">0</div>
+                        <div class="stat-label">Million Followers</div>
+                    </div>
+                </div>
+                <a href="#timeline" class="cta-button">Explore Journey</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Career Timeline -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Career Timeline</h2>
+            <p class="section-subtitle">Journey of a Legend</p>
+            <div class="timeline">
+                <div class="timeline-item" data-year="2008">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2008</div>
+                        <h3>International Debut</h3>
+                        <p>Made ODI debut against Sri Lanka, scoring 12 runs. The beginning of an extraordinary journey.</p>
+                        <button class="expand-btn" onclick="toggleDetails(this)">View Details</button>
+                        <div class="timeline-details" >
+                            <img src="1.jpeg" alt="Cricket debut" id="img1">
+                            <p>Virat Kohli made his ODI debut on August 18, 2008, against Sri Lanka in Dambulla. Though he scored only 12 runs, this marked the beginning of one of cricket's greatest careers.</p>
+                            <a href="https://www.espncricinfo.com/series/india-tour-of-sri-lanka-2008-343726/sri-lanka-vs-india-1st-odi-343732/full-scorecard" target="_blank">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2011">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2011</div>
+                        <h3>World Cup Victory</h3>
+                        <p>Part of the World Cup winning squad, contributing crucial runs in India's historic triumph.</p>
+                        <button class="expand-btn" onclick="toggleDetails(this)">View Details</button>
+                        <div class="timeline-details">
+                            <img src="2.webp" alt="World Cup">
+                            <p>Kohli played a vital role in India's 2011 World Cup campaign, scoring 282 runs. The tournament win on home soil remains one of his most cherished achievements.</p>
+                            <a href="https://www.cricbuzz.com/cricket-series/228/icc-world-cup-2011/matches" target="_blank">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2013">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2013</div>
+                        <h3>Champions Trophy Win</h3>
+                        <p>India clinched the ICC Champions Trophy with Kohli's exceptional batting performance.</p>
+                        <button class="expand-btn" onclick="toggleDetails(this)">View Details</button>
+                        <div class="timeline-details">
+                            <img src="https://images.unsplash.com/photo-1512719994953-eabf50895df7?w=400" alt="Champions Trophy">
+                            <p>Kohli was the leading run-scorer in the 2013 Champions Trophy with 296 runs, helping India win the tournament in England.</p>
+                            <a href="https://www.espncricinfo.com" target="_blank">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2017">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2017</div>
+                        <h3>Test Captaincy Peak</h3>
+                        <p>Led India to historic Test series victories abroad, becoming one of India's greatest Test captains.</p>
+                        <button class="expand-btn" onclick="toggleDetails(this)">View Details</button>
+                        <div class="timeline-details">
+                            <img src="https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?w=400" alt="Test Captain">
+                            <p>Under Kohli's captaincy, India achieved unprecedented success in Test cricket, including first-ever Test series win in Australia (2018-19).</p>
+                            <a href="https://en.wikipedia.org/wiki/Indian_cricket_team_in_Australia_in_2018%E2%80%9319" target="_blank">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2023">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3>Record 50th ODI Century</h3>
+                        <p>Broke Sachin Tendulkar's record with his 50th ODI century during World Cup 2023 in India.</p>
+                        <button class="expand-btn" onclick="toggleDetails(this)">View Details</button>
+                        <div class="timeline-details">
+                            <img src="3.jpeg" alt="50th Century">
+                            <p>On November 15, 2023, against New Zealand in the World Cup semi-final, Kohli scored his record-breaking 50th ODI century, surpassing Sachin's legendary record.</p>
+                            <a href="https://www.icc-cricket.com/tournaments/cricketworldcup/news/how-virat-kohlis-world-cup-excellence-broke-sachin-tendulkars-odi-record" target="_blank">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2024">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024</div>
+                        <h3>T20 World Cup Glory</h3>
+                        <p>Won the T20 World Cup, completing his collection of ICC trophies and retiring from T20Is.</p>
+                        <button class="expand-btn" onclick="toggleDetails(this)">View Details</button>
+                        <div class="timeline-details">
+                            <img src="4.jpg" alt="T20 World Cup">
+                            <p>India won the 2024 T20 World Cup in the Caribbean and USA, with Kohli announcing his T20I retirement after achieving his dream of winning the elusive trophy.</p>
+                            <a href="https://en.wikipedia.org/wiki/Virat_Kohli" target="_blank">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <h2 class="section-title">Stats & Achievements</h2>
+            <p class="section-subtitle">Numbers That Define Greatness</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🏏</div>
+                    <h3>Batting Average</h3>
+                    <div class="stat-bars">
+                        <div class="stat-bar-item">
+                            <span>Tests</span>
+                            <div class="stat-bar">
+                                <div class="stat-bar-fill" data-percent="49"></div>
+                                <span class="stat-value">49.53</span>
+                            </div>
+                        </div>
+                        <div class="stat-bar-item">
+                            <span>ODIs</span>
+                            <div class="stat-bar">
+                                <div class="stat-bar-fill" data-percent="58"></div>
+                                <span class="stat-value">58.18</span>
+                            </div>
+                        </div>
+                        <div class="stat-bar-item">
+                            <span>T20Is</span>
+                            <div class="stat-bar">
+                                <div class="stat-bar-fill" data-percent="52"></div>
+                                <span class="stat-value">52.73</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">💯</div>
+                    <h3>International Centuries</h3>
+                    <div class="century-chart">
+                        <canvas id="centuryChart"></canvas>
+                    </div>
+                    <div class="century-legend">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #00d4ff;"></span>
+                            <span>Tests: 29</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #ff006e;"></span>
+                            <span>ODIs: 50</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #ffbe0b;"></span>
+                            <span>T20Is: 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <h3>Awards & Recognition</h3>
+                    <div class="awards-list">
+                        <div class="award-item" data-badge="🥇">
+                            <h4>ICC ODI Player of the Year</h4>
+                            <p>2012, 2017, 2018</p>
+                        </div>
+                        <div class="award-item" data-badge="⭐">
+                            <h4>Sir Garfield Sobers Trophy</h4>
+                            <p>2017, 2018</p>
+                        </div>
+                        <div class="award-item" data-badge="🎖️">
+                            <h4>Rajiv Gandhi Khel Ratna</h4>
+                            <p>2018</p>
+                        </div>
+                        <div class="award-item" data-badge="🏅">
+                            <h4>Padma Shri</h4>
+                            <p>2017</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interactive-stats">
+                <h3>Career Comparison Tool</h3>
+                <div class="comparison-filters">
+                    <button class="filter-btn active" data-format="all">All Formats</button>
+                    <button class="filter-btn" data-format="test">Tests</button>
+                    <button class="filter-btn" data-format="odi">ODIs</button>
+                    <button class="filter-btn" data-format="t20">T20Is</button>
+                </div>
+                <div class="comparison-table">
+                    <table id="statsTable">
+                        <thead>
+                            <tr>
+                                <th>Format</th>
+                                <th>Matches</th>
+                                <th>Runs</th>
+                                <th>Average</th>
+                                <th>100s/50s</th>
+                                <th>Highest Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-format="test">
+                                <td>Tests</td>
+                                <td>113</td>
+                                <td>8,848</td>
+                                <td>49.53</td>
+                                <td>29/30</td>
+                                <td>254*</td>
+                            </tr>
+                            <tr data-format="odi">
+                                <td>ODIs</td>
+                                <td>292</td>
+                                <td>13,906</td>
+                                <td>58.18</td>
+                                <td>50/72</td>
+                                <td>183</td>
+                            </tr>
+                            <tr data-format="t20">
+                                <td>T20Is</td>
+                                <td>125</td>
+                                <td>4,188</td>
+                                <td>52.73</td>
+                                <td>1/38</td>
+                                <td>122*</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Media Gallery</h2>
+            <p class="section-subtitle">Moments That Made History</p>
+            
+            <div class="gallery-filters">
+                <button class="gallery-filter active" data-filter="all">All</button>
+                <button class="gallery-filter" data-filter="centuries">Centuries</button>
+                <button class="gallery-filter" data-filter="awards">Awards</button>
+                <button class="gallery-filter" data-filter="celebrations">Celebrations</button>
+                <button class="gallery-filter" data-filter="captaincy">Captaincy</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Gallery -->
+    <div id="galleryModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div class="modal-caption" id="modalCaption"></div>
+        <button class="modal-nav modal-prev">❮</button>
+        <button class="modal-nav modal-next">❯</button>
+    </div>
+
+    <!-- Social Section -->
+    <section id="social" class="social-section">
+        <div class="container">
+            <h2 class="section-title">Connect With The King</h2>
+            <p class="section-subtitle">Join Millions of Fans Worldwide</p>
+            
+            <div class="social-grid">
+                <a href="https://www.instagram.com/virat.kohli/" target="_blank" class="social-card instagram">
+                    <div class="social-icon">📷</div>
+                    <h3>Instagram</h3>
+                    <p class="follower-count">267M+ Followers</p>
+                    <span class="social-tag">@virat.kohli</span>
+                </a>
+                
+                <a href="https://twitter.com/imVkohli" target="_blank" class="social-card twitter">
+                    <div class="social-icon">🐦</div>
+                    <h3>Twitter</h3>
+                    <p class="follower-count">64M+ Followers</p>
+                    <span class="social-tag">@imVkohli</span>
+                </a>
+                
+                <a href="https://www.facebook.com/virat.kohli" target="_blank" class="social-card facebook">
+                    <div class="social-icon">👍</div>
+                    <h3>Facebook</h3>
+                    <p class="follower-count">55M+ Followers</p>
+                    <span class="social-tag">Virat Kohli</span>
+                </a>
+                
+                <a href="https://www.youtube.com/@viratkohli" target="_blank" class="social-card youtube">
+                    <div class="social-icon">▶️</div>
+                    <h3>YouTube</h3>
+                    <p class="follower-count">3M+ Subscribers</p>
+                    <span class="social-tag">@viratkohli</span>
+                </a>
+            </div>
+
+            <div class="fan-form">
+                <h3>Send Your Message</h3>
+                <form id="fanForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message to Virat Kohli" rows="4" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+
+            <div class="map-section">
+                <h3>Global Impact</h3>
+                <div class="world-map">
+                    <div class="map-marker" style="top: 30%; left: 60%;" data-location="India">
+                        <span class="pulse"></span>
+                        <div class="marker-label">India - Home Ground</div>
+                    </div>
+                    <div class="map-marker" style="top: 25%; left: 35%;" data-location="England">
+                        <span class="pulse"></span>
+                        <div class="marker-label">England - Historic Wins</div>
+                    </div>
+                    <div class="map-marker" style="top: 70%; left: 75%;" data-location="Australia">
+                        <span class="pulse"></span>
+                        <div class="marker-label">Australia - Series Victory</div>
+                    </div>
+                    <div class="map-marker" style="top: 65%; left: 5%;" data-location="South Africa">
+                        <span class="pulse"></span>
+                        <div class="marker-label">South Africa - Dominant Tours</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>VK<span>18</span></h2>
+                    <p>King of Cricket</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#timeline">Career</a>
+                    <a href="#stats">Stats</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#social">Connect</a>
+                </div>
+                <p class="copyright">&copy; 2024 Virat Kohli Fan Site. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
